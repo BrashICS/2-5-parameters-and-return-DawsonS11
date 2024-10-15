@@ -11,3 +11,64 @@
 
 'use strict';
 
+// Task 1
+
+function to_fahrenheit(celsius) {
+
+    let fahrenheit = Math.round((celsius * 9/5) + 32);
+
+    return fahrenheit;
+
+}
+
+// Task 2
+
+function to_celsius(fahrenheit) {
+
+    let celsius = Math.round((fahrenheit - 32) * 5/9);
+
+    return celsius;
+}
+
+// Task 3 - skip
+
+function roll_dice(qty, sides) {
+
+randInt(1, sides)
+
+}
+
+// Task 4
+
+function area_circle(radius) {
+
+    let area = Math.PI * (radius ** 2)
+
+    return area;
+}
+
+// Task 5
+
+function cylinder_volume(radius, height) {
+
+    let volume = area_circle(radius) * height
+
+    return volume;
+}
+
+// Task 6
+
+function percent_score(score, total) {
+
+    let percent_mark = Math.round((score / total) * 100)
+
+    return (`${percent_mark}%`);
+}
+
+function pythagorean_theorem(a, b) {
+
+    let c = Math.sqrt(a ** 2 + b **2)
+
+    return c;
+
+}
