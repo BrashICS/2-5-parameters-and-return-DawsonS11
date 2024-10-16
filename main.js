@@ -15,9 +15,7 @@
 
 function to_fahrenheit(celsius) {
 
-    let fahrenheit = Math.round((celsius * 9/5) + 32);
-
-    return fahrenheit;
+    return Math.round((celsius * 9/5) + 32);
 
 }
 
@@ -60,9 +58,13 @@ function cylinder_volume(radius, height) {
 
 function percent_score(score, total) {
 
-    let percent_mark = Math.round((score / total) * 100)
+    let percent_mark = (score / total) * 100
 
-    return (`${percent_mark}%`);
+    let rounded_mark = Math.round(percent_mark)
+
+    console.log(`${rounded_mark}%`)
+
+    return percent_mark;
 }
 
 function pythagorean_theorem(a, b) {
